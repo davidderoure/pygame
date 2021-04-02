@@ -68,6 +68,8 @@ def input_main(device_id=None):
                 going = False
             if e.type in [pg.KEYDOWN]:
                 going = False
+            if e.type in [pg.MOUSEBUTTONDOWN]:
+                going = False
             if e.type in [pygame.midi.MIDIIN]:
                 print(e)
 
